@@ -34,7 +34,6 @@ public class Main {
 			// menu con lo switch
 
 			if (utente == 1) {
-
 				// l'utente è un cliente
 				System.out.println("BENVENUTO NEL SITO DELL'AUTONOLEGGIO MOVEIT");
 				menu = "Cosa vuoi fare? \n 1. Ricerca un'auto per prezzo \n 2. Ricerca un'auto per nome \n3. Noleggia un'auto \n 4. Esci";
@@ -87,7 +86,7 @@ public class Main {
 					noleggio.rimuoviAuto(idAuto);
 					break;
 				case 3:
-					System.out.println("Inserisci il massimo prezzo giornaliero dell'auto: (es. 40,99");
+					System.out.println("Inserisci il massimo prezzo giornaliero dell'auto: (es. 40,99)");
 					prezzo = scan.nextDouble();
 					scan.nextLine();
 					noleggio.ricercaAuto(prezzo);
@@ -140,7 +139,11 @@ public class Main {
 				default:
 					System.out.println("Scelta non valida. Riprova.");
 				}
-			}
+			} /*else {
+				System.out.println("utente è " + utente);
+				start = false;
+				break;
+			}*/
 		}	
 	}
 }

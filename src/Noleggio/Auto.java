@@ -7,9 +7,8 @@ public class Auto {
 	private String nome;
 	private double prezzo;
 	private boolean statoNoleggio;
- 
-	private LocalDate dataNoleggio;
 
+	private LocalDate dataNoleggio;
 
 	public Auto(int idAuto, String nome, double prezzo, boolean statoNoleggio, LocalDate dataNoleggio) {
 		this.idAuto = idAuto;
@@ -26,7 +25,7 @@ public class Auto {
 	public void setIdAuto(int idAuto) {
 		this.idAuto = idAuto;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -61,11 +60,11 @@ public class Auto {
 
 	@Override
 	public String toString() {
-		return "Auto [idAuto=" + idAuto + ", nome=" + nome + ", prezzo=" + prezzo + ", statoNoleggio=" + statoNoleggio + ", dataNoleggio="
-				+ dataNoleggio + "]";
+		return "Auto [idAuto=" + idAuto + ", nome=" + nome + ", prezzo=" + prezzo + ", statoNoleggio=" + statoNoleggio
+				+ ", dataNoleggio=" + dataNoleggio + "]";
 	}
-	
-	 public String toStringPrint() {
-	        return idAuto + ", " + nome + ", " + prezzo + ", " + statoNoleggio + ", " + dataNoleggio;
-	    }
+
+	public String toStringPrint() {
+		return idAuto + ", " + nome + ", " + prezzo + ", " + statoNoleggio + ", " + dataNoleggio;
+	}
 }

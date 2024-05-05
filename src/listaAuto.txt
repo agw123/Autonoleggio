@@ -1,0 +1,1 @@
+1, Toyota Yaris, 37.99, false, null

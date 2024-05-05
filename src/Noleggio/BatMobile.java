@@ -24,4 +24,9 @@ public class BatMobile {
 		this.idAuto = idAuto;
 		this.nome = nome;
 	}	
+
+
+	public String toStringPrint() {
+		return idAuto + ", " + nome;
+	}
 }
